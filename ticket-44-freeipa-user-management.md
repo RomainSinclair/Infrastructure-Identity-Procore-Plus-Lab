@@ -1,6 +1,3 @@
-# Ticket #44 — Get a List of All Users Enrolled on FreeIPA
-
-*Category: FreeIPA / Identity Management*
 
 | **Field** | Value |
 | --- | --- |
@@ -97,12 +94,4 @@ head -n 20 /tmp/freeipa_users.txt
 
 - Redirecting with > /tmp/freeipa_users.txt stores the full result for auditing and ticketing
 
-## Screenshots
 
-***Figure 1: FreeIPA Active Users list — user psantana visible in the Identity dashboard***
-
-***Figure 2: FreeIPA user profile for psantana showing account settings***
-
-***Figure 3: Add user to User Groups dialog in FreeIPA***
-
-***Figure 4: Group membership confirmation — psantana in ipausers and webmasters***
