@@ -1,11 +1,13 @@
-> **PROCORE-PLUS LAB** **Ticket 12: Deploy Dev Webserver Using vSphere Template** *VM Provisioning · Static IP · IPA Client · Asset Inventory*
 
-| **Ticket ID**   12 | **Reporter**   Procore Plus |
+| **Field** | Value |
 | --- | --- |
-| **Project**   PROCORE-Plus Lab | **Assignee**   Romain Sinclair |
-| **Type**   Task | **VM Target**   dev-performance-tl.procore.prod1 |
-| **Priority**   Medium | **Date Resolved**   Mar 2026 |
-| **Status**   Done ✓ | **Environment**   vSphere / CentOS 8 |
+| **Ticket #** | 15 |
+| **Title** | Create and Copy SSH Keys to Ansible & GitLab** *SSH Keygen · Passwordless Auth · GitLab · FreeIPA User* |
+| **Category** | Infrastructure  |
+| **Prepared by** | Romain Sinclair |
+| **Environment** | Procore-Plus Lab (CentOS Stream / RHEL-based) |
+
+
 
 ## 1. Objective
 
