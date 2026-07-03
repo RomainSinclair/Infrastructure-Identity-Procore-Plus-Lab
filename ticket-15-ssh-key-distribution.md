@@ -1,11 +1,13 @@
-> **PROCORE-PLUS LAB** **Ticket 15: Create and Copy SSH Keys to Ansible & GitLab** *SSH Keygen · Passwordless Auth · GitLab · FreeIPA User*
 
-| **Ticket ID**   15 | **Reporter**   Procore Plus |
+| **Field** | Value |
 | --- | --- |
-| **Project**   PROCORE-Plus Lab | **Assignee**   Romain Sinclair |
-| **Type**   Task | **Date**   March 2026 |
-| **Priority**   Medium | **Source Servers**   dev-app, dev-performance |
-| **Status**   In Progress | **Targets**   dev-ansible, GitLab |
+| **Ticket #** | 15 |
+| **Title** | Create and Copy SSH Keys to Ansible & GitLab** *SSH Keygen · Passwordless Auth · GitLab · FreeIPA User* |
+| **Category** | Infrastructure  |
+| **Prepared by** | Romain Sinclair |
+| **Environment** | Procore-Plus Lab (CentOS Stream / RHEL-based) |
+
+
 
 ## 1. Objective
 
