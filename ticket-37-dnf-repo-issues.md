@@ -1,6 +1,3 @@
-# Ticket #37 — Users Reporting Repository Issues
-
-*Category: Infrastructure / Package Management*
 
 | **Field** | Value |
 | --- | --- |
