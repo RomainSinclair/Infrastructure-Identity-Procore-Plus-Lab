@@ -16,8 +16,8 @@ VMware vSphere (templates, snapshots, RAM changes), FreeIPA/Kerberos, SSH key ge
 | #44 | FreeIPA: Export User List & Delete User | [ticket-44-freeipa-user-management.md](tickets/ticket-44-freeipa-user-management.md) |
 | #55 | RAM Upgrade Request — dev-app (vSphere) | [ticket-55-ram-upgrade-devapp.md](tickets/ticket-55-ram-upgrade-devapp.md) |
 | #58 | Create Your Own GitLab Repository | [ticket-58-gitlab-repository.md](tickets/ticket-58-gitlab-repository.md) |
-| #12 | Deploy Dev Webserver Using vSphere Template | [ticket-tl12-deploy-dev-webserver.md](tickets/ticket-12-deploy-dev-webserver.md) |
-| #15 | Create and Copy SSH Keys to Ansible & GitLab | [ticket-tl15-ssh-key-distribution.md](tickets/ticket-15-ssh-key-distribution.md) |
+| #12 | Deploy Dev Webserver Using vSphere Template | [ticket-12-deploy-dev-webserver.md](tickets/ticket-12-deploy-dev-webserver.md) |
+| #15 | Create and Copy SSH Keys to Ansible & GitLab | [ticket-15-ssh-key-distribution.md](tickets/ticket-15-ssh-key-distribution.md) |
 
 ## About
 Each ticket document includes the objective, environment details, step-by-step resolution, commands used, and verification/outcome. These reflect real hands-on system administration work completed in a lab modeled on production operations.
