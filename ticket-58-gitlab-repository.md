@@ -1,6 +1,3 @@
-# Ticket #58 — Create Your Own GitLab Repository
-
-*Category: Infrastructure / Git Version Control*
 
 | **Field** | Value |
 | --- | --- |
@@ -92,10 +89,4 @@ git push origin main
 
 - GitLab personal access tokens must be configured before git push will work
 
-## Screenshots
 
-***Figure 1: dev-ansible — git clone of ansible-playbook-rs1, directory listing and git status***
-
-***Figure 2: git add, commit and push to GitLab repository***
-
-***Figure 3: GitLab repository showing uploaded Ansible playbooks and Bash scripts***
