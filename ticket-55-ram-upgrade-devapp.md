@@ -1,6 +1,3 @@
-# Ticket #55 — RAM Upgrade Request — dev-app
-
-*Category: VMware vSphere / VM Resource Management*
 
 | **Field** | Value |
 | --- | --- |
@@ -66,8 +63,3 @@ free -m
 
 - free -m shows memory in megabytes — verify the total matches the new allocated amount
 
-## Screenshots
-
-***Figure 1: vSphere VM summary — dev-performance-rs1 showing current memory (1 GB) before upgrade***
-
-***Figure 2: vSphere clone wizard — storage selection step showing DS-01 datastore***
