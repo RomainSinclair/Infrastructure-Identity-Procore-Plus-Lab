@@ -1,6 +1,6 @@
-> **PROCORE-PLUS LAB** **Ticket TL-15: Create and Copy SSH Keys to Ansible & GitLab** *SSH Keygen · Passwordless Auth · GitLab · FreeIPA User*
+> **PROCORE-PLUS LAB** **Ticket 15: Create and Copy SSH Keys to Ansible & GitLab** *SSH Keygen · Passwordless Auth · GitLab · FreeIPA User*
 
-| **Ticket ID**   TL-15 | **Reporter**   Procore Plus |
+| **Ticket ID**   15 | **Reporter**   Procore Plus |
 | --- | --- |
 | **Project**   PROCORE-Plus Lab | **Assignee**   Romain Sinclair |
 | **Type**   Task | **Date**   March 2026 |
@@ -11,7 +11,7 @@
 
 The security and network team requires all users to generate SSH key pairs on their development servers and configure passwordless SSH authentication to the Ansible control node and GitLab repository. This enables secure, automated operations without password prompts.
 
-> **📋  Task Requirements** Passwordless SSH: dev-app ↔ dev-ansible.procore.prod1 Passwordless SSH: dev-app → GitLab account (git@gitlab.com) Passwordless SSH: dev-performance ↔ dev-ansible.procore.prod1 Passwordless SSH: dev-performance → GitLab account IMPORTANT: Log in as your FreeIPA user when generating keys
+> **  Task Requirements** Passwordless SSH: dev-app ↔ dev-ansible.procore.prod1 Passwordless SSH: dev-app → GitLab account (git@gitlab.com) Passwordless SSH: dev-performance ↔ dev-ansible.procore.prod1 Passwordless SSH: dev-performance → GitLab account IMPORTANT: Log in as your FreeIPA user when generating keys
 
 ## 2. Why SSH Keys? The Engineer's Rationale
 
@@ -36,9 +36,9 @@ The security and network team requires all users to generate SSH key pairs on th
 # Verify keys were created ls -la ~/.ssh/
 ```
 
-> **⚠️  Troubleshooting: Key Stored in File Named "yes"** Mistake: At the "Enter file" prompt, typed "yes" instead of pressing Enter. Result: Private key was saved to a file literally named "yes" — not the default ~/.ssh/id_rsa. Fix: Press ENTER for ALL prompts to accept defaults. Never type "yes" at the file location prompt. Lesson: The ssh-keygen prompts are "accept/decline" in plain language — read carefully before typing.
+> **  Troubleshooting: Key Stored in File Named "yes"** Mistake: At the "Enter file" prompt, typed "yes" instead of pressing Enter. Result: Private key was saved to a file literally named "yes" — not the default ~/.ssh/id_rsa. Fix: Press ENTER for ALL prompts to accept defaults. Never type "yes" at the file location prompt. Lesson: The ssh-keygen prompts are "accept/decline" in plain language — read carefully before typing.
 
-> **📸  Screenshot 1: ssh-keygen output on dev-app showing key pair generation**
+> **  Screenshot 1: ssh-keygen output on dev-app showing key pair generation**
 
 ### Step 2 — Copy SSH Key to dev-ansible
 
@@ -49,7 +49,7 @@ The security and network team requires all users to generate SSH key pairs on th
 # Should connect WITHOUT asking for a password
 ```
 
-> **📸  Screenshot 2: ssh-copy-id to dev-ansible and passwordless SSH login confirmation**
+> **  Screenshot 2: ssh-copy-id to dev-ansible and passwordless SSH login confirmation**
 
 ### Step 3 — Add Public Key to GitLab Profile
 
@@ -63,7 +63,7 @@ The security and network team requires all users to generate SSH key pairs on th
 # Expected: Welcome to GitLab, @<username>!
 ```
 
-> **📸  Screenshot 3: GitLab SSH key settings page and ssh -T git@gitlab.com welcome message**
+> **  Screenshot 3: GitLab SSH key settings page and ssh -T git@gitlab.com welcome message**
 
 ### Step 4 — Repeat on dev-performance
 
@@ -75,18 +75,18 @@ The security and network team requires all users to generate SSH key pairs on th
 # Test connection ssh <user>@dev-ansible.procore.prod1
 ```
 
-> **📸  Screenshot 4: dev-performance ssh-keygen and ssh-copy-id to dev-ansible**
+> **  Screenshot 4: dev-performance ssh-keygen and ssh-copy-id to dev-ansible**
 
 ## 4. Verification Matrix
 
 | **#** | **Check Item** | **How to Verify** | **Status** |
 | --- | --- | --- | --- |
-| 1 | SSH key pair generated on dev-app | ls -la ~/.ssh/ shows id_rsa and id_rsa.pub | ✅  Done |
-| 2 | Public key copied to dev-ansible from dev-app | ssh-copy-id: "Number of key(s) added: 1" | ✅  Done |
-| 3 | Passwordless SSH to dev-ansible from dev-app | ssh to dev-ansible connects without password | ✅  Done |
-| 4 | Public key added to GitLab profile | GitLab Settings → SSH Keys shows key | ✅  Done |
-| 5 | SSH -T git@gitlab.com returns welcome message | Welcome to GitLab, @<username>! | ✅  Done |
-| 6 | SSH key pair generated on dev-performance | ls -la ~/.ssh/ shows id_rsa and id_rsa.pub | ✅  Done |
-| 7 | Passwordless SSH to dev-ansible from dev-performance | ssh connects without password | ✅  Done |
+| 1 | SSH key pair generated on dev-app | ls -la ~/.ssh/ shows id_rsa and id_rsa.pub |  Done |
+| 2 | Public key copied to dev-ansible from dev-app | ssh-copy-id: "Number of key(s) added: 1" |  Done |
+| 3 | Passwordless SSH to dev-ansible from dev-app | ssh to dev-ansible connects without password |  Done |
+| 4 | Public key added to GitLab profile | GitLab Settings → SSH Keys shows key |  Done |
+| 5 | SSH -T git@gitlab.com returns welcome message | Welcome to GitLab, @<username>! |  Done |
+| 6 | SSH key pair generated on dev-performance | ls -la ~/.ssh/ shows id_rsa and id_rsa.pub |  Done |
+| 7 | Passwordless SSH to dev-ansible from dev-performance | ssh connects without password |  Done |
 
-> **Ticket TL-15 · Create and Copy SSH Keys to Ansible & GitLab · Procore-Plus Lab***  │  Assignee: Romain Sinclair · PROCORE Infrastructure Team*
+> **Ticket 15 · Create and Copy SSH Keys to Ansible & GitLab · Procore-Plus Lab***  │  Assignee: Romain Sinclair · PROCORE Infrastructure Team*
