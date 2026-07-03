@@ -109,8 +109,3 @@ dnf repolist | grep -i extreme
 
 - CentOS Stream 9 repo paths changed — Extras moved; CRB path is stable for this use case
 
-## Screenshots
-
-***Figure 1: dev-app — dnf repository configuration and repolist output***
-
-***Figure 2: curl -I testing the repo URL — HTTP 200 confirms working CRB path***
