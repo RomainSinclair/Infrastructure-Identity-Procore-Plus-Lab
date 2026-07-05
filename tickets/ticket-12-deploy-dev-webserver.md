@@ -1,9 +1,9 @@
 
 | **Field** | Value |
 | --- | --- |
-| **Ticket #** | 15 |
-| **Title** | Create and Copy SSH Keys to Ansible & GitLab** *SSH Keygen · Passwordless Auth · GitLab · FreeIPA User* |
-| **Category** | Infrastructure  |
+| **Ticket #** | 12 |
+| **Title** | Deploy Dev Webserver Using vSphere Template** *VM Provisioning · Static IP · IPA Client · Asset Inventory* |
+| **Category** | Infrastructure |
 | **Prepared by** | Romain Sinclair |
 | **Environment** | Procore-Plus Lab (CentOS Stream / RHEL-based) |
 
@@ -15,7 +15,7 @@ The web development team requires a new development web server deployed from the
 
 > **  Task Requirements** VM Name: dev-performance-rs1.procore.prod1 Network: Static IP connection (reference IPAM sheet for IP address) Package: ipa-client installed and joined to FreeIPA domain Asset Inventory: VM registered in Asset Tiger with serial number
 
-## 2. Why vSphere Templates? The Engineer's Rationale
+## 2. Why vSphere Templates? The Rationale
 
 Rather than building a VM from scratch each time, vSphere templates provide a standardized, pre-configured OS image that enforces consistency across the infrastructure.
 
